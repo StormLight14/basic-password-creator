@@ -1,7 +1,6 @@
-import random
-import string
-
-password_chars = string.ascii_letters
+import random                                           
+import string                                           
+password_chars = string.printable[:-len(string.whitespace)]                                                     
 password = ""
 try:
     password_length = int(input("Please enter a password length: "))
